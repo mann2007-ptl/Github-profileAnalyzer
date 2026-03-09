@@ -1,16 +1,177 @@
-# React + Vite
+# 🚀 GitHub Profile Analyzer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A **React.js web application** that analyzes GitHub profiles using the **GitHub REST API**.
+Users can search any GitHub username and instantly view profile information, repository data, language statistics, and contribution insights.
 
-Currently, two official plugins are available:
+🔗 **Live Demo**
+https://mannpatel-githubanalyser.netlify.app/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+# 📌 Project Overview
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+GitHub Profile Analyzer helps users quickly explore GitHub profiles without navigating through GitHub manually.
+It fetches real-time data from the GitHub API and presents it in a **clean, organized, and responsive UI**.
 
-## Expanding the ESLint configuration
+This project demonstrates:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* React component architecture
+* API integration
+* Data visualization
+* Modern frontend development practices
+
+---
+
+# ✨ Features
+
+🔍 Search any GitHub username
+👤 View profile information (avatar, bio, followers, etc.)
+📦 Display public repositories
+📊 Repository statistics
+🌐 Language usage chart
+📈 Contribution activity visualization
+⚡ Fast and responsive interface
+
+---
+
+# 🛠️ Tech Stack
+
+**Frontend**
+
+* React.js
+* JavaScript (ES6+)
+* CSS
+
+**Build Tool**
+
+* Vite
+
+**API**
+
+* GitHub REST API
+
+**Deployment**
+
+* Netlify
+
+---
+
+# 📂 Project Structure
+
+```bash
+Github-profileAnalyzer
+│
+├── public
+│
+├── src
+│   │
+│   ├── assets
+│   │
+│   ├── components
+│   │   ├── ContributionActivity.jsx
+│   │   ├── LanguageChart.jsx
+│   │   ├── ProfileCard.jsx
+│   │   ├── RepoList.jsx
+│   │   ├── SearchBar.jsx
+│   │   └── Stats.jsx
+│   │
+│   ├── utils
+│   │   └── githubApi.js
+│   │
+│   ├── App.jsx
+│   ├── App.css
+│   ├── index.css
+│   └── main.jsx
+│
+├── index.html
+├── package.json
+├── package-lock.json
+├── vite.config.js
+├── eslint.config.js
+└── README.md
+```
+
+---
+
+# ⚙️ Installation & Setup
+
+Follow these steps to run the project locally.
+
+### 1️⃣ Clone the repository
+
+```bash
+git clone https://github.com/mann2007-ptl/Github-profileAnalyzer.git
+```
+
+### 2️⃣ Navigate to project directory
+
+```bash
+cd Github-profileAnalyzer
+```
+
+### 3️⃣ Install dependencies
+
+```bash
+npm install
+```
+
+### 4️⃣ Start the development server
+
+```bash
+npm run dev
+```
+
+The application will start at:
+
+```
+http://localhost:5173
+```
+
+---
+
+# 🌐 GitHub API
+
+This project uses the **GitHub REST API** to fetch user data.
+
+Example endpoint:
+
+```
+https://api.github.com/users/{username}
+```
+
+Official documentation:
+https://docs.github.com/en/rest
+
+---
+
+# 🚀 Future Improvements
+
+* Repository sorting by stars
+* GitHub contribution heatmap
+* Dark / Light theme toggle
+* Repository search & filters
+* Better data visualizations
+
+---
+
+# 🤝 Contributing
+
+Contributions are welcome!
+
+1. Fork the repository
+2. Create a new branch
+3. Make your changes
+4. Submit a Pull Request
+
+---
+
+# 👨‍💻 Author
+
+**Mann Patel**
+
+GitHub:
+https://github.com/mann2007-ptl
+
+---
+
+⭐ If you found this project useful, consider giving it a **star**!
